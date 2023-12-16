@@ -42,7 +42,7 @@
 - Clone the starter
 
 ```
-git clone https://github.com/ZongMua/NeoVim.git ~/.config/nvim
+git clone https://github.com/ZongMua/nvim ~/.config/nvim
 ```
 
 - Remove the `.git` folder
