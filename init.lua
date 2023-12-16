@@ -91,7 +91,7 @@ require("lazy").setup({
 		},
 	},
 
-	-- NOTE: CODE COMPLETION SUGGESTIONS
+	-- NOTE: CODE COMPLETION HINT
 	{
 		-- Configuring lsp servers
 		{ "neovim/nvim-lspconfig", lazy = false, priority = 1000 },
