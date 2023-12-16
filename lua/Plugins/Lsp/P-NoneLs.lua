@@ -14,6 +14,7 @@ null_ls.setup({
 		-- formatting
 		formatting.beautysh, -- bash/zsh
 		formatting.prettier, -- js/ts/html/css
+		formatting.prettierd, -- js/ts
 		formatting.stylua, -- lua
 
 		-- linter
