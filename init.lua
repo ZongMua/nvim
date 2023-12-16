@@ -80,11 +80,13 @@ require("lazy").setup({
 		{ -- Preview Markdown file
 			{
 				"toppair/peek.nvim", -- Markdown
-				ft = { "md", "markdown" },
+				event = { "VeryLazy" },
+				build = "deno task --quiet build:fast",
 			},
 			{
 				"Zeioth/markmap.nvim", -- Markmap
-				ft = { "md", "markdown" },
+				build = "yarn global add markmap-cli",
+				cmd = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
 			},
 		},
 	},
