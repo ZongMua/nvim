@@ -12,7 +12,7 @@ map("n", ";", ":")
 
 -- Insert leave
 map({ "n", "v" }, "<C-c>", "<ESC>", opts)
-map("i", "jk", "<ESC>", opts)
+map({ "i" }, "jk", "<ESC>", opts)
 vim.cmd("autocmd VimEnter * ino <C-c> <ESC>")
 
 -- No highlight
@@ -56,6 +56,12 @@ vim.cmd([[map <C-space> %]])
 -- Move line up/down
 map("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 map("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+
+-- Move keys
+map({ "i", "c" }, "<A-h>", "<Left>")
+map({ "i", "c" }, "<A-l>", "<Right>")
+map({ "i", "c" }, "<A-j>", "<Down>")
+map({ "i", "c" }, "<A-k>", "<Up>")
 
 -- PageUp/PageDown
 map("n", "<C-d>", "<C-d>zz")
