@@ -39,21 +39,33 @@
 
 ### 📦 Installation (Linux/MacOS)
 
+- Delete old Neovim configurations
+
+```bash
+# required
+rm -rf ~/.config/nvim
+
+# optional
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+```
+
 - Clone the starter
 
-```
-git clone https://github.com/ZongMua/nvim ~/.config/nvim
+```bash
+git clone https://github.com/ZongMua/nvim ~/.config
 ```
 
 - Remove the `.git` folder
 
-```
+```bash
 rm -rf ~/.config/nvim/.git
 ```
 
 - Start Neovim!
 
-```
+```bash
 nvim
 ```
 
