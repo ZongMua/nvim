@@ -132,9 +132,9 @@ require("lazy").setup({
 	},
 })
 
-require("core.base")
-require("core.keymaps")
-require("core.colors")
+require("Core.Base")
+require("Core.Keymaps")
+require("Core.Colors")
 
 -- PLUGINS
 require("Plugins.P-AlternateToggler")
