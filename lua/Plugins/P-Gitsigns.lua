@@ -9,7 +9,7 @@ gitsigns.setup({
 		change = { text = "│" },
 		delete = { text = "│" },
 		topdelete = { text = "│" },
-		changedelete = { text = "│" },
+		changedelete = { text = "~" },
 		untracked = { text = "┆" },
 	},
 	signcolumn = true,
@@ -28,7 +28,7 @@ gitsigns.setup({
 		ignore_whitespace = false,
 		virt_text_priority = 100,
 	},
-	current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
+	current_line_blame_formatter = "<author>, <author_time:%H:%M %p, %Y-%m-%d> - <summary>",
 	sign_priority = 6,
 	update_debounce = 100,
 	status_formatter = nil,
@@ -53,25 +53,25 @@ gitsigns.setup({
 		end
 
 		-- Navigation
-		map("n", "g]", function()
+		map("n", "}", function()
 			if vim.wo.diff then
-				return "g]"
+				return "}"
 			end
 			vim.schedule(function()
 				gs.next_hunk()
 			end)
 			return "<Ignore>"
-		end, { expr = true })
+		end, { expr = true, noremap = true })
 
-		map("n", "g[", function()
+		map("n", "{", function()
 			if vim.wo.diff then
-				return "g["
+				return "{"
 			end
 			vim.schedule(function()
 				gs.prev_hunk()
 			end)
 			return "<Ignore>"
-		end, { expr = true })
+		end, { expr = true, noremap = true })
 
 		map("n", "<leader>hp", gs.preview_hunk)
 		map("n", "<leader>hb", function()

@@ -75,7 +75,7 @@ telescope.setup({
 			dir_icon = "",
 			layout_config = {
 				width = 0.7,
-				height = 0.7,
+				height = 0.8,
 			},
 			mappings = {
 				["i"] = {

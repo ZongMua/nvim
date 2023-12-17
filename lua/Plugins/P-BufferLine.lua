@@ -78,40 +78,40 @@ bufferline.setup({
 
 	highlights = {
 		buffer_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		numbers_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		diagnostic_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		error_diagnostic_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		error_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		warning_diagnostic_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		warning_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		info_diagnostic_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 		info_selected = {
-			gui = "bold",
-			italic = false,
+			gui = "italic",
+			bold = false,
 		},
 	},
 })

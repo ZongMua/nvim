@@ -85,10 +85,10 @@ map("n", "<Leader>ss", "<Cmd> split<CR>", opts)
 map("n", "<Leader>sv", "<Cmd> vsplit<CR>", opts)
 
 -- Resize windows
-map("n", "<A-h>", "<Cmd> vertical resize -1<CR>", opts)
-map("n", "<A-l>", "<Cmd> vertical resize +1<CR>", opts)
-map("n", "<A-j>", "<Cmd> resize -1<CR>", opts)
-map("n", "<A-k>", "<Cmd> resize +1<CR>", opts)
+map("n", "<A-l>", "<C-w>>")
+map("n", "<A-h>", "<C-w><")
+map("n", "<A-k>", "<C-w>+")
+map("n", "<A-j>", "<C-w>-")
 
 -- Select active window
 map("n", "<C-j>", "<C-w>j", opts)
