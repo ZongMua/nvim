@@ -38,7 +38,7 @@ null_ls.setup({
 							return client.name == "null-ls"
 						end,
 						bufnr = bufnr,
-						timeout_ms = 1000,
+						timeout_ms = 500,
 					})
 				end,
 			})
